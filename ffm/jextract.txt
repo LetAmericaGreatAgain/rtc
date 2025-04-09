@@ -1,0 +1,8 @@
+jextract ^
+  --include-dir E:/CLionProjects/test/rtc/ffm ^
+  --output src/main/java ^
+  --target-package com.ffm.rtc ^
+  --library ffm_rtc ^
+  --header-class-name RtcHelper ^
+  E:/CLionProjects/test/rtc/ffm/RtcHelper.h
+

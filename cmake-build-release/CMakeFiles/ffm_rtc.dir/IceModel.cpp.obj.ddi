@@ -1,0 +1,13 @@
+{
+    "version": 1,
+    "revision": 0,
+    "rules": [
+        {
+            "primary-output": "CMakeFiles\\ffm_rtc.dir\\IceModel.cpp.obj",
+            "outputs": [
+                "CMakeFiles\\ffm_rtc.dir\\IceModel.cpp.obj.ddi"
+            ],
+            "requires": []
+        }
+    ]
+}

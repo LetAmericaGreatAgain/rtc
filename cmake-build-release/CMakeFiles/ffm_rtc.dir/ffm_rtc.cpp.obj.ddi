@@ -1,0 +1,13 @@
+{
+    "version": 1,
+    "revision": 0,
+    "rules": [
+        {
+            "primary-output": "CMakeFiles\\ffm_rtc.dir\\ffm_rtc.cpp.obj",
+            "outputs": [
+                "CMakeFiles\\ffm_rtc.dir\\ffm_rtc.cpp.obj.ddi"
+            ],
+            "requires": []
+        }
+    ]
+}

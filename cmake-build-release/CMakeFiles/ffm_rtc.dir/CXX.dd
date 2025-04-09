@@ -1,0 +1,11 @@
+ninja_dyndep_version = 1.0
+build CMakeFiles\ffm_rtc.dir\RtcManager.cpp.obj: dyndep
+
+build CMakeFiles\ffm_rtc.dir\WebSocketHelper.cpp.obj: dyndep
+
+build CMakeFiles\ffm_rtc.dir\DataChannelListener.cpp.obj: dyndep
+
+build CMakeFiles\ffm_rtc.dir\IceModel.cpp.obj: dyndep
+
+build CMakeFiles\ffm_rtc.dir\ffm_rtc.cpp.obj: dyndep
+
