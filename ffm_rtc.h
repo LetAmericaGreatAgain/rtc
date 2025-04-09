@@ -8,12 +8,12 @@
 #include "RtcManager.h"
 
 struct IceConfig {
-    int noStun;           // 是否禁用 STUN
-    const char* stunServer;  // STUN 服务器地址（固定长度字符串）
-    int stunPort;     // STUN 端口
-    int udpMux;           // 是否启用 UDP 多路复用
-    const char* webSocketServer; // WebSocket 服务器地址
-    int webSocketPort;    // WebSocket 端口
+    int noStun;          
+    const char* stunServer;  
+    int stunPort;     
+    int udpMux;        
+    const char* webSocketServer; 
+    int webSocketPort; 
 };
 
 struct DataChannelConfig {
