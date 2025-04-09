@@ -24,7 +24,7 @@ private:
 public:
     void newWebSocket(const std::string& url);
 public:
-    // Builder 类
+    
     class Builder {
     private:
         std::shared_ptr<rtc::WebSocket> ws;
@@ -39,43 +39,43 @@ public:
 
         explicit Builder(const std::shared_ptr<rtc::WebSocket> &ws) : ws(ws) {}
 
-        // 设置 WebSocket 实例（可选）
+        
         Builder& setWebSocket(std::shared_ptr<rtc::WebSocket> &websocket) {
             ws = websocket;
             return *this;
         }
 
-        // 设置打开时的回调
+        
         Builder& onOpen(std::function<void()> callback) {
             whenOpen = std::move(callback);
             return *this;
         }
 
-        // 设置关闭时的回调
+       
         Builder& onClosed(std::function<void()> callback) {
             whenClosed = std::move(callback);
             return *this;
         }
 
-        // 设置错误时的回调
+        
         Builder& onError(std::function<void(std::string)> callback) {
             whenError = std::move(callback);
             return *this;
         }
 
-        // 设置二进制消息回调
+        
         Builder& onBinaryMessage(std::function<void(std::vector<std::byte>)> callback) {
             whenBinaryMessage = std::move(callback);
             return *this;
         }
 
-        // 设置文本消息回调
+        
         Builder& onTextMessage(std::function<void(std::string)> callback) {
             whenTextMessage = std::move(callback);
             return *this;
         }
 
-        // 构建 WebSocketHelper 对象
+        
         std::unique_ptr<WebSocketHelper> build() {
             std::unique_ptr<WebSocketHelper> helper = std::make_unique<WebSocketHelper>();
             helper->ws = ws;
